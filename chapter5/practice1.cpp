@@ -19,12 +19,10 @@ int main() {
   namedWindow("5 x 5 filter");
   namedWindow("11 x 11 filter");
 
-  while (1) {
-    imshow("source", image);
-    imshow("5 x 5 filter", g5_filter);
-    imshow("11 x 11 filter", g11_filter);
-    if (waitKey(0) == 27) break;
-  }
+  imshow("source", image);
+  imshow("5 x 5 filter", g5_filter);
+  imshow("11 x 11 filter", g11_filter);
+  if (waitKey(0) == 27) break;
 
   return 0;
 }
